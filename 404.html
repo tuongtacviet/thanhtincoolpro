@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đang chuyển trang… | Thành Tín CoolPro</title>
+<script>
+(function () {
+  var seg = location.pathname.replace(/^\/+/, '').replace(/\.html$/i, '');
+  var known = ['index', 'du-an', 'gioi-thieu', 'kien-thuc', 'hop-tac', 'lien-he', 'nha-xuong', 'biet-thu', 'thuong-mai', 'thi-cong-dieu-hoa-cong-trinh'];
+  if (seg && known.indexOf(seg) !== -1) {
+    location.replace('/#' + seg);
+  } else {
+    location.replace('/');
+  }
+})();
+</script>
+</head>
+<body>
+<p>Đang chuyển sang trang bạn cần… Nếu trình duyệt không tự chuyển, <a href="/">bấm vào đây để về trang chủ</a>.</p>
+</body>
+</html>
