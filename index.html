@@ -740,6 +740,14 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
 
+    // GỬI KÈM VỀ GOOGLE SHEETS + GMAIL — 26/11: POST nền về webhook Apps Script, không chặn Zalo, lỗi thì bỏ qua
+
+
+
+    try{fetch('https://script.google.com/macros/s/AKfycbwMkYguP6VsNseT5OLHiPAVvXpbZb2aiBjsVeGylr7UWzYXaZWsgU_u73yXiMws7kIi/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({name:name,phone:phone,type:type,place:place,count:count,source:'web'})}).catch(function(){});}catch(_error){}
+
+
+
     let copied=false;
 
 
